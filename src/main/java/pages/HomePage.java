@@ -14,7 +14,7 @@ public class HomePage extends BasePage{
                 (new AjaxElementLocatorFactory(driver, 10), this);
     }
 
-        @FindBy(xpath = "//a[@data-uuid='MJFtCCgVhXrVl7v9HA7EH_signup']")
+        @FindBy(xpath = "//a[@data-uuid='MJFtCCgVhXrVl7v9HA7EH_login']")
         WebElement btnLogin;
 
     public void clickBtnLogin(){
