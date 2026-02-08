@@ -10,23 +10,23 @@ import pages.HomePage;
 import pages.LoginPage;
 import pages.MyBoardPage;
 
-public class BoardTests extends AppManager {
-
+public class DeleteBoardTests extends AppManager {
     @BeforeMethod(alwaysRun = true)
-    public void login(){
+    public void loginCreateBoard(){
         User user = User.builder().email("konstantinmqatest@gmail.com")
                 .password("Password123!QA").build();
         HomePage homePage = new HomePage(getDriver());
         homePage.clickBtnLogin();
         new LoginPage(getDriver()).login(user);
+        Board board = Board.builder().boardTitle("11122").build();
+        new BoardsPage(getDriver()).createNewBoard(board);
+
     }
 
     @Test
-    public void createNewBoardPositiveTest(){
-        Board board = Board.builder().boardTitle("11122").build();
-        new BoardsPage(getDriver()).createNewBoard(board);
-        new MyBoardPage(getDriver()).validateBoardName("11122",5);
+    public void deleteBoardPositiveTest(){
+        new MyBoardPage(getDriver())
+                .validateBoardName("11122",5);
+        new MyBoardPage(getDriver()).deleteBoard();
     }
-
-
 }

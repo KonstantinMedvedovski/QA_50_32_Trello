@@ -14,8 +14,32 @@ public class MyBoardPage extends BasePage{
     }
     @FindBy(xpath = "//input[@data-testid='board-name-input']")
     WebElement boardName;
+    @FindBy(xpath = "//span[@data-testid='OverflowMenuHorizontalIcon']")
+    WebElement btnDots;
+    @FindBy(xpath = "//ul/li[last()]/button")
+    WebElement btnCloseBoard;
+    @FindBy(xpath = "//button[@data-testid='popover-close-board-confirm']")
+    WebElement btnCloseBoardConfirm;
+   // @FindBy(xpath = "//button[@data-testid='popover-close-board-confirm']")
+    @FindBy(xpath = "//ul/li[last()]/button")
+    WebElement btnDeleteBoard;
+    @FindBy(xpath = "//button[@data-testid='close-board-delete-board-confirm-button']")
+    WebElement btnDeleteBoardConfirm;
 
-
+public void deleteBoard(){
+    btnDots.click();
+    btnCloseBoard.click();
+    btnCloseBoardConfirm.click();
+    pause(5);
+    driver.navigate().refresh();
+    pause(2);
+    btnDots.click();
+    pause(5);
+    //clickWait(btnDots,5);
+    btnDeleteBoard.click();
+    pause(3);
+    btnDeleteBoardConfirm.click();
+}
 
 
 
