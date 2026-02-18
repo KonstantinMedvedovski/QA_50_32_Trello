@@ -14,6 +14,7 @@ public class LoginTest extends AppManager {
     public void loginPositiveTest(){
         User user = User.builder().email("konstantinmqatest@gmail.com")
                 .password("Password123!QA").build();
+        logger.info("login test with user"+"  " + user.getEmail()+ "  " + user.getPassword());
         HomePage homePage = new HomePage(getDriver());
         homePage.clickBtnLogin();
         new LoginPage(getDriver()).login(user);

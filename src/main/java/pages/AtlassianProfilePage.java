@@ -24,6 +24,12 @@ public class AtlassianProfilePage extends BasePage{
     WebElement inputUploadPhoto;
     @FindBy(xpath = "//button[@class='css-u9eekp']")
     WebElement btnUploadPhoto;
+    @FindBy(xpath = "//div[@class='_v564glyw _1bsb1kdj _kqswstnw _u7coidpf _1eqkauwl _t9ec1ygq _1pbyqfx8 _12a7luct']")
+    WebElement popUpMessage;
+    @FindBy(xpath = "//h2[@class='_1mouidpf _1dyz4jg8 _1p1dglyw _11c8140y _syaz15cr']")
+    WebElement popUpWrongFormatFile;
+
+
 
     public void changeMyProfilePhoto(String photoPath){
         Actions actions = new Actions(driver);
@@ -32,5 +38,12 @@ public class AtlassianProfilePage extends BasePage{
         File photo = new File(photoPath);
         inputUploadPhoto.sendKeys(photo.getAbsolutePath());
         clickWait(btnUploadPhoto,5);
+    }
+    public boolean validateMessage(String text){
+        return validateTextInElementWait(popUpMessage,text,10);
+    }
+
+    public boolean validateWrongFormatFileMessage(String text){
+        return validateTextInElementWait(popUpWrongFormatFile,text,10);
     }
 }

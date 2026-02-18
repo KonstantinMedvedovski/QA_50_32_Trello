@@ -1,0 +1,2 @@
+20:04:34.599 [Test worker] INFO  manager.AppManager - start testing with method -->loginPositiveTest
+20:04:34.615 [Test worker] INFO  manager.AppManager - login test with userkonstantinmqatest@gmail.com  Password123!QA
