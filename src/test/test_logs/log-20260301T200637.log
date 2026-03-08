@@ -1,0 +1,4 @@
+20:06:39.721 [Test worker] INFO  utils.TestNGListener - [TestClass name=class tests.ChangeProfilePhoto]start testing -->changeProfilePhoto
+20:06:39.724 [Test worker] INFO  utils.TestNGListener - [TestClass name=class tests.ChangeProfilePhoto]test skipped changeProfilePhoto
+20:06:39.727 [Test worker] INFO  utils.TestNGListener - [TestClass name=class tests.ChangeProfilePhoto]start testing -->changeProfilePhotoNegativeWrongFormatFile
+20:06:39.728 [Test worker] INFO  utils.TestNGListener - [TestClass name=class tests.ChangeProfilePhoto]test skipped changeProfilePhotoNegativeWrongFormatFile

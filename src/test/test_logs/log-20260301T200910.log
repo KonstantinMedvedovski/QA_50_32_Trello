@@ -1,0 +1,2 @@
+20:09:12.564 [Test worker] INFO  utils.TestNGListener - [TestClass name=class tests.DeleteBoardTests]start testing -->deleteBoardPositiveTest
+20:09:12.568 [Test worker] INFO  utils.TestNGListener - [TestClass name=class tests.DeleteBoardTests]test skipped deleteBoardPositiveTest

@@ -1,0 +1,2 @@
+20:05:05.216 [Test worker] INFO  utils.TestNGListener - [TestClass name=class tests.BoardTests]start testing -->createNewBoardPositiveTest
+20:05:05.219 [Test worker] INFO  utils.TestNGListener - [TestClass name=class tests.BoardTests]test skipped createNewBoardPositiveTest
