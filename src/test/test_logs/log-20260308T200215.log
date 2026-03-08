@@ -1,0 +1,2 @@
+20:02:17.994 [Test worker] INFO  utils.TestNGListener - [TestClass name=class tests.ChangeProfilePhoto]start testing -->changeProfilePhoto
+20:02:17.996 [Test worker] INFO  utils.TestNGListener - [TestClass name=class tests.ChangeProfilePhoto]test skipped changeProfilePhoto

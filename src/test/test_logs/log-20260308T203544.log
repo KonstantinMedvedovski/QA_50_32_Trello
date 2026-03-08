@@ -1,0 +1,12 @@
+20:35:47.231 [Test worker] INFO  utils.TestNGListener - [TestClass name=class tests.LoginTest]start testing -->loginPositiveTest
+20:35:47.234 [Test worker] INFO  utils.TestNGListener - [TestClass name=class tests.LoginTest]test skipped loginPositiveTest
+20:35:47.236 [Test worker] INFO  manager.AppManager - stop testing with methodloginPositiveTest
+20:35:49.057 [Test worker] INFO  utils.TestNGListener - [TestClass name=class tests.ChangeProfilePhoto]start testing -->changeProfilePhoto
+20:35:49.058 [Test worker] INFO  utils.TestNGListener - [TestClass name=class tests.ChangeProfilePhoto]test skipped changeProfilePhoto
+20:35:49.059 [Test worker] INFO  manager.AppManager - stop testing with methodchangeProfilePhoto
+20:35:50.691 [Test worker] INFO  utils.TestNGListener - [TestClass name=class tests.BoardTests]start testing -->createNewBoardPositiveTest
+20:35:50.692 [Test worker] INFO  utils.TestNGListener - [TestClass name=class tests.BoardTests]test skipped createNewBoardPositiveTest
+20:35:50.693 [Test worker] INFO  manager.AppManager - stop testing with methodcreateNewBoardPositiveTest
+20:35:52.256 [Test worker] INFO  utils.TestNGListener - [TestClass name=class tests.DeleteBoardTests]start testing -->deleteBoardPositiveTest
+20:35:52.257 [Test worker] INFO  utils.TestNGListener - [TestClass name=class tests.DeleteBoardTests]test skipped deleteBoardPositiveTest
+20:35:52.259 [Test worker] INFO  manager.AppManager - stop testing with methoddeleteBoardPositiveTest

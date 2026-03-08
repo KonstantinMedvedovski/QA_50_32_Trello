@@ -23,7 +23,7 @@ public class AppManager {
     }
     public AppManager(){}
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setup(Method method){
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--lang=en");
@@ -35,7 +35,7 @@ public class AppManager {
         logger.info("start testing with method -->"+ method.getName());
     }
 
-    @AfterMethod(enabled = false)
+    @AfterMethod(enabled = true,alwaysRun = true)
     public void tearDown(Method method){
         if (driver!= null)
             driver.quit();

@@ -20,7 +20,7 @@ import java.util.List;
 public class ChangeProfilePhoto extends AppManager {
     BoardsPage boardsPage;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void login(){
         User user = User.builder().email("konstantinmqatest@gmail.com")
                 .password("Password123!QA").build();
@@ -29,7 +29,7 @@ public class ChangeProfilePhoto extends AppManager {
         new LoginPage(getDriver()).login(user);
         boardsPage = new BoardsPage(getDriver());
 }
-@Test
+@Test(groups = "smoke")
     public void changeProfilePhoto(){
         boardsPage.openMyAccount();
     List<String> tabs =new ArrayList<>(getDriver().getWindowHandles());

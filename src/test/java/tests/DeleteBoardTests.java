@@ -27,7 +27,7 @@ public class DeleteBoardTests extends AppManager {
 
     }
 
-    @Test
+    @Test(groups = "smoke")
     public void deleteBoardPositiveTest(){
         new MyBoardPage(getDriver())
                 .validateBoardName("11122",5);

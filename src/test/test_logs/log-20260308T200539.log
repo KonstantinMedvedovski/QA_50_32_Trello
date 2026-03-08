@@ -1,0 +1,2 @@
+20:05:41.331 [Test worker] INFO  utils.TestNGListener - [TestClass name=class tests.LoginTest]start testing -->loginPositiveTest
+20:05:41.334 [Test worker] INFO  utils.TestNGListener - [TestClass name=class tests.LoginTest]test skipped loginPositiveTest

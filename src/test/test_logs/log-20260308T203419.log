@@ -1,0 +1,6 @@
+20:34:19.639 [Test worker] INFO  utils.TestNGListener - [TestClass name=class tests.LoginTest]start testing -->loginPositiveTest
+20:34:19.645 [Test worker] INFO  manager.AppManager - login test with user  konstantinmqatest@gmail.com  Password123
+20:34:19.652 [Test worker] INFO  utils.TestNGListener - [TestClass name=class tests.LoginTest]test failedloginPositiveTest
+20:34:19.653 [Test worker] ERROR utils.TestNGListener - Error
+20:34:19.671 [Test worker] INFO  utils.TestNGListener - [TestClass name=class tests.LoginTest]test failedloginPositiveTest
+20:34:19.672 [Test worker] ERROR utils.TestNGListener - Error
